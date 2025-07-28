@@ -66,10 +66,74 @@ Module 9: Opportunities and Learning Paths
 Career Opportunities in Data Analysis
 The Many Paths to Data Analysis
 
+Analysis VS Analytics
+To analyze is to EXAMINE, looking at information or details within the said data set.
+Analytics means using a defined system, tools and techniques 
 
+ # The 7 Key Phases of the analytics lifecycle
+ 1. Define the problem
+ 2. Data Collection
+ 3. Data Preparation
+ 4. Data Exploration
+ 5. Modelling & Analysis
+ 6. Deployment
+ 7. Monitoring & Optimization
+    ## Defining Problems
+GOAL: Frame a clear, specific and measurable business question
+Steps involved: 
+1. Meet with the stakeholders
+2. Define KPI( Key Performance Indicators)
+3. Understand the business context
+   
 
+    ## Data Collection
+   GOAL: Gather the right set of data that answers the question
+   Internal: CRM, ERP, Website logs, databases
+   (CRM: Customer Relationship Management)
+   A CRM system is one that helps a business manage interactions with customers and track sale, marketing and support activities.
+   .Store Customer Information
+   .Manages sales pipelines and leads
+   .Track customer support tickets
+   .Automate email marketing
+   .Analyze customer behavior
+   ## Tools:
+   * Salesforce
+   * Hubspot
+   * Zoho
+   * MS Dynamics 365
+   * Pipedive
 
+     ## (ERP= Enterprise Resource Planning)
+     Integrates all the business processes (Like finance, supply chain, HR, inventory, Manufacturing etc) into one platform
+     Provide Accounting and financial records
+     Inventory and order management
+     Data about HR
+     Procurement and Supply chain
+     Manufacturing and Logistics
+  
+        External: APIs, Survey, Market reports
 
+   Tools: SQL, Python, ETL tools, Google Analytics, Mixpanel, Segment.
+   GOAL: Create a relevant, accurate, timely, and accessible data.
+     
+     ## Data Preparation
+     Goal: Clean and format the data for a smooth analysis
+     Tasks: Generate and handle missing values
+     Remove duplicates
+     Convert formats (eg dates, currencies etc)
+     Normalize or encode the data
+
+     TOOLS:
+     Python (Pandas, NumPy)
+     Excel, Power Query
+
+     Data Exploration (EDA)
+   Goal:Uncover patterns, trends and anomalies
+   
+     
+   
+
+    
 
 
 

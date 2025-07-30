@@ -333,4 +333,7 @@ GitHub portfolio with all notebooks and projects
 
 Resume-ready certification or summary
 ---
-
+Python (Pycharm)
+SQL
+Tableau
+Power BI

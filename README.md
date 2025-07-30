@@ -173,16 +173,34 @@ Datadog, Grafana
 Crin jobs, Airflow
 MLflow for tracking ML models
 
-Phase 1: 
+---
 
-    
+## Week 2: Excel & Google Sheets for Analysts
+1. Data types, formatting, cleaning
 
+Formulas, functions (VLOOKUP, INDEX-MATCH, etc.)
 
+Pivot tables and basic charts
 
+Excel / Google Sheets for Analytics
+Data entry, formatting, filtering, sorting
 
+Basic formulas (SUM, AVERAGE, IF, VLOOKUP, etc.)
 
+Pivot tables
 
+Basic charts and dashboards
 
+2.  Statistics & Probability Essentials
+Types of data (nominal, ordinal, interval, ratio)
+
+Measures of central tendency (mean, median, mode)
+
+Measures of dispersion (variance, standard deviation)
+
+Probability, distributions (normal, binomial)
+
+Correlation vs causation
 
 
 
@@ -197,16 +215,6 @@ Phase 1:
 
 
 ---
-
-## Week 2: Excel & Google Sheets for Analysts
-Data types, formatting, cleaning
-
-Formulas, functions (VLOOKUP, INDEX-MATCH, etc.)
-
-Pivot tables and basic charts
-
-Excel dashboard project
-
 ## Week 3: Introduction to SQL
 Relational databases
 
@@ -216,6 +224,17 @@ Aggregate functions and GROUP BY
 
 Joins (INNER, LEFT, RIGHT)
 
+Aggregations and subqueries
+
+Working with dates and NULLs
+
+2.  Data Visualization Basics
+Principles of effective charts
+
+Types of visualizations: bar, line, pie, scatter, histogram
+
+Intro to tools: Tableau Public or Power BI (basic dashboards)
+---
 ## Week 4: SQL Advanced Techniques
 Subqueries
 

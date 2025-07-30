@@ -129,9 +129,51 @@ Steps involved:
 
      Data Exploration (EDA)
    Goal:Uncover patterns, trends and anomalies
-   
-     
-   
+   TEchniques:
+   Summary statistics (Mean Median and Mode)
+   Correlation Matrices
+   Data Visualization (Histograms, Scatter plots, box plots)
+
+   Tools:
+   Python (Mathplotlib, Seaborn, Plotly)
+   Tableau, Power BI
+
+   ## Modeling and Analysis
+   Build statistical or machine learning models to derive insights or predictions
+   Types of Analysis
+   1. Descriptive: What happened?
+   2. Diagnostic: Why did it happen?
+   3. Predictive: What might happen?
+   4. Prescriptive: What should we do?
+      Tools:
+      Python
+      SQL
+      Excel
+   ## Deployment
+   Goal: Put the analysis and model into action
+   EX:
+Embed dashboards into business workflows
+Deploy ML Models to production (..APIs)
+Send automated alerts or reports
+
+Tools:
+Tableau, Power BI(Dashboards)
+FastAPI
+git, Azure/AWS (for scaling)
+
+## Monitoring & Optimization
+Goal: Track outcomes, refine models, and update strategies
+Activities:
+Monitor KPI
+Track model drift
+collect user feedback
+schedule data pipeline checks
+Tools:
+Datadog, Grafana
+Crin jobs, Airflow
+MLflow for tracking ML models
+
+Phase 1: 
 
     
 

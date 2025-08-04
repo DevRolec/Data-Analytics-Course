@@ -189,7 +189,123 @@ Basic formulas (SUM, AVERAGE, IF, VLOOKUP, etc.)
 
 Pivot tables
 
-Basic charts and dashboards
+Basic charts and dashboards:
+
+## Data Types and Data Entry:
+Basic Shortcut Keys in Exceel
+
+| Action             | Shortcut   |
+| ------------------ | ---------- |
+| **New workbook**   | `Ctrl + N` |
+| **Open workbook**  | `Ctrl + O` |
+| **Save workbook**  | `Ctrl + S` |
+| **Print**          | `Ctrl + P` |
+| **Undo**           | `Ctrl + Z` |
+| **Redo**           | `Ctrl + Y` |
+| **Cut**            | `Ctrl + X` |
+| **Copy**           | `Ctrl + C` |
+| **Paste**          | `Ctrl + V` |
+| **Select all**     | `Ctrl + A` |
+| **Find**           | `Ctrl + F` |
+| **Replace**        | `Ctrl + H` |
+| **Close workbook** | `Ctrl + W` |
+
+
+🔹 Navigation
+
+| Action                          | Shortcut           |
+| ------------------------------- | ------------------ |
+| Move to next cell               | `Arrow keys`       |
+| Move to next sheet              | `Ctrl + Page Down` |
+| Move to previous sheet          | `Ctrl + Page Up`   |
+| Move to the edge of data region | `Ctrl + Arrow key` |
+| Jump to cell A1                 | `Ctrl + Home`      |
+| Jump to last used cell          | `Ctrl + End`       |
+| Go to specific cell             | `Ctrl + G` or `F5` |
+
+
+🔹 Cell Formatting
+
+| Action              | Shortcut           |
+| ------------------- | ------------------ |
+| Bold                | `Ctrl + B`         |
+| Italic              | `Ctrl + I`         |
+| Underline           | `Ctrl + U`         |
+| Format cells dialog | `Ctrl + 1`         |
+| Add border          | `Ctrl + Shift + &` |
+| Remove border       | `Ctrl + Shift + _` |
+| Center alignment    | `Alt + H + A + C`  |
+| Left alignment      | `Alt + H + A + L`  |
+| Right alignment     | `Alt + H + A + R`  |
+| Wrap text           | `Alt + H + W`      |
+| Merge cells         | `Alt + H + M + C`  |
+
+
+🔹 Data Entry & Editing
+
+| Action                             | Shortcut           |
+| ---------------------------------- | ------------------ |
+| Edit active cell                   | `F2`               |
+| Enter current date                 | `Ctrl + ;`         |
+| Enter current time                 | `Ctrl + Shift + ;` |
+| Fill down from cell above          | `Ctrl + D`         |
+| Fill right from left cell          | `Ctrl + R`         |
+| Insert comment (note in new Excel) | `Shift + F2`       |
+| Clear content                      | `Delete`           |
+| Add new line within cell           | `Alt + Enter`      |
+| Cancel entry                       | `Esc`              |
+
+
+
+🔹 Row and Column Operations
+
+| Action               | Shortcut           |
+| -------------------- | ------------------ |
+| Insert row           | `Ctrl + Shift + +` |
+| Delete row           | `Ctrl + -`         |
+| Select entire row    | `Shift + Space`    |
+| Select entire column | `Ctrl + Space`     |
+| Hide selected row    | `Ctrl + 9`         |
+| Unhide row           | `Ctrl + Shift + 9` |
+| Hide selected column | `Ctrl + 0`         |
+| Unhide column        | `Ctrl + Shift + 0` |
+
+🔹 Working with Formulas
+
+| Action                     | Shortcut     |
+| -------------------------- | ------------ |
+| Start a formula            | `=`          |
+| Insert function dialog     | `Shift + F3` |
+| Toggle absolute reference  | `F4`         |
+| Calculate active worksheet | `Shift + F9` |
+| AutoSum                    | `Alt + =`    |
+| Display formulas           | `Ctrl + ~`   |
+
+
+🔹 Tables, Charts, and Filters
+
+| Action                      | Shortcut           |
+| --------------------------- | ------------------ |
+| Insert table                | `Ctrl + T`         |
+| Apply filter                | `Ctrl + Shift + L` |
+| Create chart from selection | `Alt + F1`         |
+| Insert chart                | `F11`              |
+
+🔹 Other Useful Shortcuts
+
+| Action                 | Shortcut            |
+| ---------------------- | ------------------- |
+| Open right-click menu  | `Shift + F10`       |
+| Display context menu   | `Alt + Shift + F10` |
+| Open help              | `F1`                |
+| Spell check            | `F7`                |
+| Recalculate all sheets | `F9`                |
+
+
+
+
+
+
 
 2.  Statistics & Probability Essentials
 Types of data (nominal, ordinal, interval, ratio)

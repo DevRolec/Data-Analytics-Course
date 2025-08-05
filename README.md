@@ -302,7 +302,7 @@ Basic Shortcut Keys in Exceel
 | Recalculate all sheets | `F9`                |
 
 
-
+---
 
 
 

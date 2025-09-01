@@ -318,7 +318,18 @@ Probability, distributions (normal, binomial)
 
 Correlation vs causation
 
+---
+Lookup Functions
+-> LookUp functions, searches for a value in the first column of a 
+range/table and returns a value from another column in same row.
 
+syntax:  
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+-> lookup_value : Value searched for--
+
+-> table_array : the data range
+-> col_index_num : The column num in the range to return
+[range_lookup] : TRUE (approximate match) , FALSE (exact match)
 
 
 

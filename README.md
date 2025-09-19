@@ -149,6 +149,7 @@ Steps involved:
       Python
       SQL
       Excel
+      
    ## Deployment
    Goal: Put the analysis and model into action
    EX:

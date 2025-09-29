@@ -484,3 +484,232 @@ Python (Pycharm)
 SQL
 Tableau
 Power BI
+---
+# POSTGRESQL DATAABASE
+
+# PostgreSQL Query Guide
+
+This guide is based on a tutorial video and expands its content into a structured mini‑tutorial with explanations and examples.
+
+---
+
+## Table of Contents
+1. [Introduction / Setup](#1-introduction--setup)
+2. [Basic SELECT](#2-basic-select)
+3. [SELECT DISTINCT](#3-select-distinct)
+4. [COUNT](#4-count-and-countdistinct)
+5. [WHERE Filters](#5-where-filters)
+6. [ORDER BY](#6-order-by)
+7. [LIMIT](#7-limit)
+8. [BETWEEN and IN](#8-between-in)
+9. [LIKE / ILIKE](#9-pattern-matching-like--ilike)
+10. [Aggregate Functions & GROUP BY](#10-aggregate-functions--group-by)
+11. [HAVING](#11-having)
+12. [Aliasing (AS)](#12-aliasing-as)
+13. [Practice / Challenge Queries](#13-combined--challenge-queries)
+14. [Summary Table](#summary-table)
+
+---
+
+## 1. Introduction / Setup
+
+Install PostgreSQL & pgAdmin, then create a database and sample table:
+
+```sql
+CREATE TABLE sales (
+  sale_id SERIAL PRIMARY KEY,
+  product VARCHAR,
+  region VARCHAR,
+  amount NUMERIC,
+  sale_date DATE
+);
+
+INSERT INTO sales (product, region, amount, sale_date) VALUES
+  ('Widget', 'North', 100, '2025-01-10'),
+  ('Gadget', 'South', 150, '2025-01-11'),
+  ('Widget', 'North', 120, '2025-01-12'),
+  ('Thingamajig', 'North', 80, '2025-02-01'),
+  ('Gadget', 'North', 200, '2025-02-05'),
+  ('Widget', 'South', 130, '2025-02-10');
+```
+
+---
+
+## 2. Basic SELECT
+
+```sql
+SELECT product, amount FROM sales;
+SELECT * FROM sales;
+SELECT product, amount * 1.2 AS adjusted_amount FROM sales;
+```
+
+---
+
+## 3. SELECT DISTINCT
+
+```sql
+SELECT DISTINCT product FROM sales;
+SELECT DISTINCT product, region FROM sales;
+```
+
+---
+
+## 4. COUNT and COUNT(DISTINCT)
+
+```sql
+SELECT COUNT(*) AS total_sales FROM sales;
+SELECT COUNT(region) AS region_count FROM sales;
+SELECT COUNT(DISTINCT product) AS distinct_products FROM sales;
+
+SELECT region, COUNT(*) AS sales_in_region
+FROM sales
+GROUP BY region;
+```
+
+---
+
+## 5. WHERE Filters
+
+```sql
+SELECT * FROM sales WHERE amount > 100;
+
+SELECT product, amount
+FROM sales
+WHERE region = 'North' AND sale_date >= '2025-02-01';
+```
+
+---
+
+## 6. ORDER BY
+
+```sql
+SELECT product, amount FROM sales ORDER BY amount DESC;
+SELECT product, region, amount FROM sales ORDER BY region ASC, amount DESC;
+```
+
+---
+
+## 7. LIMIT
+
+```sql
+SELECT * FROM sales ORDER BY amount DESC LIMIT 3;
+```
+
+---
+
+## 8. BETWEEN / IN
+
+```sql
+SELECT * FROM sales WHERE amount BETWEEN 100 AND 150;
+SELECT * FROM sales WHERE region IN ('North', 'South');
+```
+
+---
+
+## 9. Pattern Matching: LIKE / ILIKE
+
+```sql
+SELECT * FROM sales WHERE product LIKE 'W%';
+SELECT * FROM sales WHERE product LIKE '%get';
+SELECT * FROM sales WHERE product ILIKE '%widget%';
+```
+
+---
+
+## 10. Aggregate Functions & GROUP BY
+
+```sql
+SELECT region, SUM(amount) AS total_sales
+FROM sales
+GROUP BY region;
+
+SELECT region,
+       SUM(amount) AS total_sales,
+       AVG(amount) AS avg_sale,
+       COUNT(*) AS count_sales,
+       MAX(amount) AS max_sale,
+       MIN(amount) AS min_sale
+FROM sales
+GROUP BY region;
+```
+
+---
+
+## 11. HAVING
+
+```sql
+SELECT region, COUNT(*) AS cnt
+FROM sales
+GROUP BY region
+HAVING COUNT(*) > 2;
+
+SELECT region, SUM(amount) AS total_sales
+FROM sales
+GROUP BY region
+HAVING SUM(amount) > 200;
+```
+
+---
+
+## 12. Aliasing (AS)
+
+```sql
+SELECT product AS prod, SUM(amount) AS total_amt
+FROM sales AS s
+GROUP BY product;
+```
+
+---
+
+## 13. Combined / Challenge Queries
+
+```sql
+-- Top product by total sales
+SELECT product, SUM(amount) AS total_sales
+FROM sales
+GROUP BY product
+ORDER BY total_sales DESC
+LIMIT 1;
+
+-- Regions with average sale amount > 120
+SELECT region, AVG(amount) AS avg_sale
+FROM sales
+GROUP BY region
+HAVING AVG(amount) > 120
+ORDER BY avg_sale DESC;
+
+-- Distinct products per region
+SELECT region, COUNT(DISTINCT product) AS num_products
+FROM sales
+WHERE region = 'North'
+GROUP BY region;
+
+-- Sales between certain dates
+SELECT product, SUM(amount) AS total_sales
+FROM sales
+WHERE sale_date BETWEEN '2025-01-01' AND '2025-02-28'
+  AND region IN ('North', 'South')
+GROUP BY product
+ORDER BY total_sales DESC;
+```
+
+---
+
+## Summary Table
+
+| Clause / Concept | Level | Purpose |
+|------------------|-------|---------|
+| `SELECT` | Row / projection | Choose columns or expressions |
+| `DISTINCT` | Row | Remove duplicate rows |
+| `WHERE` | Row | Filter rows |
+| `GROUP BY` | Group | Group rows for aggregation |
+| Aggregate functions | Group | SUM, AVG, COUNT, etc. |
+| `HAVING` | Group | Filter groups after aggregation |
+| `ORDER BY` | Final | Sort results |
+| `LIMIT` | Final | Restrict number of rows |
+| `BETWEEN`, `IN` | Row | Range / set filters |
+| `LIKE` / `ILIKE` | Row | Pattern matching |
+| `AS` | Row/Group | Alias for readability |
+
+---
+

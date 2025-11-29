@@ -1,5 +1,5 @@
 # 🎓Data Analytics Course Outline
-Format: 4 Months → 16 Weeks
+Format: 6 Months → 16 Weeks
 Pace: 4–6 hours/week of theory, coding labs, projects
 Tools Used: Python, SQL, Excel, Jupyter, Power BI, Git, Scikit-learn, Pandas, NumPy, Tableau (optional)
 Project-Based: Each month ends with a real-world project.

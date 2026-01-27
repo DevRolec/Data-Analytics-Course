@@ -355,7 +355,289 @@ Joins (INNER, LEFT, RIGHT)
 Aggregations and subqueries
 
 Working with dates and NULLs
+---
+MODULE 1: Introduction to Databases & PostgreSQL
+Objectives
 
+Students should understand:
+
+What a database is
+
+Why PostgreSQL is used in data science
+
+Difference between SQL and NoSQL
+
+What is a table, row, column, primary key
+
+Topics
+
+What is a Relational Database?
+
+Why PostgreSQL for Data Science
+
+Installing PostgreSQL & pgAdmin
+
+Connecting to a Database
+
+Creating Databases and Tables
+
+Practical
+
+Create database: data_science_lab
+
+Create table: students, sales, customers
+
+##Assignment 1
+
+Install PostgreSQL
+
+Create a database and 3 tables
+
+Insert at least 20 records
+
+MODULE 2: SQL Fundamentals
+Topics
+
+SELECT, WHERE, ORDER BY
+
+LIMIT, DISTINCT
+
+COUNT, SUM, AVG, MIN, MAX
+
+Filtering with AND, OR, BETWEEN, LIKE, IN
+
+Practical
+
+Query examples:
+```
+SELECT * FROM sales WHERE amount > 50000;
+SELECT AVG(amount) FROM sales;
+```
+
+Assignment 2
+
+Write 15 SQL queries:
+
+Highest sale
+
+Total revenue
+
+Customers from a specific city
+
+Monthly sales summary
+
+MODULE 3: Data Cleaning in SQL
+Topics
+
+Handling NULL values
+
+Removing duplicates
+
+Data type conversion
+
+Constraints (NOT NULL, UNIQUE)
+
+Update & Delete operations
+
+Practical
+
+Clean a dirty dataset:
+
+Missing emails
+
+Duplicate phone numbers
+
+Wrong date formats
+
+Assignment 3
+
+Clean a customer dataset
+
+Remove duplicates
+
+Replace missing values
+
+Document your cleaning steps
+
+MODULE 4: Joins & Relationships
+Topics
+
+Primary Key & Foreign Key
+
+INNER JOIN
+
+LEFT JOIN
+
+RIGHT JOIN
+
+Subqueries
+
+Practical
+
+Tables:
+
+customers
+
+orders
+
+payments
+
+Assignment 4
+
+Join customers with orders
+
+Find:
+
+Top 10 customers by spending
+
+Customers with no purchases
+
+Monthly revenue per product
+
+MODULE 5: Data Analysis with SQL
+Topics
+
+GROUP BY
+
+HAVING
+
+Window Functions
+
+Ranking (ROW_NUMBER, RANK)
+
+Time series analysis
+
+Practical
+
+Analyze:
+
+Sales trend by month
+
+Customer retention
+
+Product performance
+
+Assignment 5
+
+Write an SQL report that answers:
+
+Best selling product
+
+Most profitable region
+
+Growth rate per month
+
+MODULE 6: PostgreSQL for Data Science Tools
+Topics
+
+Connecting PostgreSQL to Python (Pandas)
+
+Using SQL in Jupyter Notebook
+
+Importing CSV into PostgreSQL
+
+Exporting query results to CSV
+
+Assignment 6
+
+Load a real dataset (Kaggle / World Bank)
+
+Store it in PostgreSQL
+
+Query it using Python
+
+Visualize with Matplotlib
+
+CAPSTONE PROJECTS (Choose One)
+1. Business Intelligence Project
+
+Title: Sales Performance Analytics System
+
+Dataset: Retail sales
+
+Tasks:
+
+Build database schema
+
+Clean data
+
+Write 20 analytical SQL queries
+
+Create Power BI dashboard
+
+2. Banking & Finance Project
+
+Title: Customer Credit Risk Database
+
+Analyze:
+
+Loan default patterns
+
+Income vs repayment
+
+Risk segmentation
+
+3. Healthcare Data Project
+
+Title: Hospital Patient Analytics
+
+Analyze:
+
+Disease frequency
+
+Admission trends
+
+Mortality rates
+
+4. Education Analytics Project
+
+Title: Student Performance Data Warehouse
+
+Analyze:
+
+Scores vs attendance
+
+Dropout prediction
+
+Performance by subject
+
+5. E-Commerce Recommendation Data System
+
+Title: Product & Customer Behavior Analysis
+
+Analyze:
+
+Basket analysis
+
+Repeat purchases
+
+Seasonal demand
+
+MINI PROJECTS (Weekly)
+
+Build a Library Database System
+
+Build a School Result Database
+
+Build a POS Sales Database
+
+Build a Hospital Appointment System
+
+Build a Logistics Tracking Database
+
+FINAL ASSESSMENT
+Practical Exam
+
+Design database from scratch
+
+Import dataset
+
+Clean it
+
+Write 25 analytical SQL queries
+
+Generate insights report
+---
 2.  Data Visualization Basics
 Principles of effective charts
 
